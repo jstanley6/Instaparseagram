@@ -10,18 +10,20 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.jasonstanl3y.instaparseagram.R;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 
 public class LoginActivity extends AppCompatActivity {
-
+    public static final int RESULT_CODE = 20;
     private static final String TAG = "LoginActivity";
     private EditText edUsername;
     private EditText edPassword;
     private Button btnLogin;
     private TextView tvCreateAccount;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,7 @@ public class LoginActivity extends AppCompatActivity {
         edPassword = findViewById(R.id.edPassword);
         btnLogin = findViewById(R.id.btnLogin);
         tvCreateAccount = findViewById(R.id.tvCreateAccount);
+
 
         tvCreateAccount.setOnClickListener(new View.OnClickListener() {
             @Override

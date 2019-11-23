@@ -34,7 +34,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='instaparseagram_part_2.gif' title='Video Walkthrough' width=250 alt='Video Walkthrough Part 2'><br>
+<img src='instaparsagram_part_2.gif' title='Video Walkthrough' width=250 alt='Video Walkthrough Part 2'><br>
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 

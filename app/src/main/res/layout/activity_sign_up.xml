@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.SignUpActivity">
+    tools:context=".activities.SignUpActivity"
+    android:background="@drawable/bg_login">
 
 
     <EditText
@@ -16,7 +17,9 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
         android:ems="10"
-        android:hint="Username" />
+        android:textColor="@color/login_for_details"
+        android:hint="Username"
+        />
 
     <EditText
         android:id="@+id/edPassword"
@@ -27,6 +30,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:textColorHint="@color/login_for_details"
         android:hint="Password"
 
         android:inputType="textPassword" />
@@ -40,6 +44,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:textColorHint="@color/login_for_details"
         android:hint="Email Address"
         android:inputType="textEmailAddress" />
 
@@ -52,6 +57,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:textColorHint="@color/login_for_details"
         android:hint="Handle (Nickname)"
         android:inputType="textPersonName" />
 
@@ -63,5 +69,8 @@
         android:layout_below="@+id/edHandle"
         android:layout_marginStart="0dp"
         android:layout_marginTop="16dp"
+        android:background="@drawable/btn_bg"
+        android:textAllCaps="false"
+        android:textColor="@color/login_form_details_medium"
         android:text="Submit" />
 </RelativeLayout>

@@ -87,7 +87,6 @@ public class PostsFragment extends Fragment {
                 mPosts.addAll(posts);
                 // Now we call setRefreshing(false) to signal refresh has finished
                 swipeContainer.setRefreshing(false);
-//                adapter.notifyDataSetChanged();
                 for(int i = 0; i < posts.size(); i++) {
                     Log.d(TAG, "Post: " + posts.get(i).getDescription() + " username: " + posts.get(i).getUser().getUsername());
                 }

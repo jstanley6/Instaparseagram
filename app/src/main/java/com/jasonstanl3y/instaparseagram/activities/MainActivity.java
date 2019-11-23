@@ -38,7 +38,7 @@ import com.parse.SaveCallback;
 
 import java.io.File;
 import java.util.List;
-
+import android.view.Menu;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
@@ -84,5 +84,24 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId() == R.id.logOut) {
+            ParseUser.logOut();
+            Intent i = new Intent(this, LoginActivity.class);
+            startActivity(i);
+        }else if(item.getItemId() == R.id.aboutApp) {
+            Intent i = new Intent(this, AboutActivity.class);
+            startActivity(i);
+        }else {
+            return super.onOptionsItemSelected(item);
+        }
+        return true;
+    }
 }

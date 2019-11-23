@@ -43,7 +43,6 @@ public class ComposeFragment extends Fragment {
     private EditText edDescription;
     private Button btnCaptureImage;
     private Button btnSubmit;
-    private Button btnLogOut;
     private ImageView ivPostImage;
     private static final String TAG = "ComposeFragment";
     public final static int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 1034;
@@ -69,7 +68,6 @@ public class ComposeFragment extends Fragment {
         btnCaptureImage = view.findViewById(R.id.btnCaptureImage);
         btnSubmit = view.findViewById(R.id.btnSubmit);
         ivPostImage = view.findViewById(R.id.ivPostImage);
-        btnLogOut = view.findViewById(R.id.btnLogOut);
 
         btnCaptureImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,14 +91,7 @@ public class ComposeFragment extends Fragment {
             }
         });
 
-        btnLogOut.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ParseUser.logOut();
-                Intent i = new Intent(getContext(), LoginActivity.class);
-                startActivity(i);
-            }
-        });
+
     }
 
 

@@ -11,10 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activities.SignUpActivity"></activity>
-        <!-- make sure within the application tag, otherwise app will crash with XmlResourceParser errors -->
+        <activity android:name=".activities.AboutActivity"></activity>
+        <activity android:name=".activities.SignUpActivity" /> <!-- make sure within the application tag, otherwise app will crash with XmlResourceParser errors -->
         <activity android:name=".activities.MainActivity" />
-
         <activity android:name=".activities.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.codepath.fileprovider"
